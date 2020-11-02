@@ -130,7 +130,7 @@ const houseSelectButton = document.querySelector('#houses-button');
 
 //5 Pintamos la función que filtrará y pintará la casa seleccionada
 function handleckickHouseSelection(houseSelected) {
-  filterHouse= false;
+  houseSelected = true;
   const houseFilter = characters.filter((house) => {
     return characters.house === houseSelected;
   });
