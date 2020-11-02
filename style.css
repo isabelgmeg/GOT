@@ -1,0 +1,25 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    background: #CF8F6B;
+    color: 331C0E;
+    line-height: 1.4;
+}
+
+#characterDiv{
+  display: flex;
+}
+.card{
+    width: 23rem;
+    background: #fff;
+    border: 3px solid rgba(15, 15, 15, 0.25);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: box-shadow 300ms ease;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25), 0 0 40px rgba(15, 15, 15, 0.15);
+    text-align: center;
+    margin: 3rem;
+}
+img{
+    width: 300px;
+    border: #02245e;
+}
