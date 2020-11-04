@@ -94,12 +94,12 @@ const characters = [
   //`
 
  //funcion que rellena el html con el objeto
-  function paintCharacters(characters) {
+  function paintCharacters(character) {
 
     //Busco el contenedor con los personajes
     const characterContainer = document.querySelector('#characters');
     characterContainer.innerHTML = '';
-    characters.forEach((character) => {
+    character.forEach((character) => {
       // Creo un div como el de baseCard
       const characterDiv = document.createElement('div');
       // Le añado la clase .card
@@ -146,37 +146,5 @@ function handleckickHouseButton(event){
   }
 }
 houseSelectButton.addEventListener('change',handleckickHouseButton)
-
-
-
-//Busco el boton de cambiar a caminantes blancos
-const changeButton = document.querySelector('#cambio-caminantes')
-
-
-changeButton.addEventListener("click",changeWhiteWalker)
-//Esta función es la que pita todas las cartas
-
-//Función pintar personajes
-function revertFunction(event) {
-  return paintCharacters(characters);
-}
-
-//8 Creamos el botón de revert
-revertButton = document.querySelector('#revert')
-
-revertButton.addEventListener("click", paintCharacters(characters))
-
-//Hago una funcion que mapea los characters y cambia house
-
-let whiteWalkerCharacters = []
-
-function changeWhiteWalker(characters) {
-  const whiteWalkerCharacters = Object.assign({}, characters);
-  whiteWalkerCharacters.forEach(function (character) {
-      return character.picture = 'https://s2.r29static.com/bin/entry/8ce/x/1837616/image.png';
-    });
-      return paintCharacters(whiteWalkerCharacters);
-}
-
 
 paintCharacters(characters);
